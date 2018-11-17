@@ -1,0 +1,27 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <ion-grid justify-content-center text-center>
+    <ion-row></ion-row>
+    <ion-row >
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-title>Welcome to EduWorld</ion-title><br>
+        <ion-img id="welcome-image" src="../../assets/imgs/welcome.png"></ion-img>
+      </ion-col>
+
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row align-items-end>
+      <ion-col>
+        <button ion-button (click)="this.navCtrl.setRoot('LoginPage')">Log In</button>
+        <button ion-button>Sign Up</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
