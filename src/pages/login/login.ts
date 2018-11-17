@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Events } from 'ionic-angular';
 
 /**
  * Generated class for the LoginPage page.
@@ -14,8 +14,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'login.html',
 })
 export class LoginPage {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public events: Events) {
+    events.subscribe('logout', () => {
+      this.navCtrl.pop();
+    });
+  }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  logIn(){
+    this.events.publish("login");
+    this.navCtrl.push('MainTabsPage');
   }
 
   ionViewDidLoad() {

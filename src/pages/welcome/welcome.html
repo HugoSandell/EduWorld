@@ -5,23 +5,17 @@
   Ionic pages and navigation.
 -->
 
-<ion-content padding>
-  <ion-grid justify-content-center text-center>
-    <ion-row></ion-row>
-    <ion-row >
-      <ion-col></ion-col>
-      <ion-col>
+<ion-content padding justify-content-center text-center>
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <div>
         <ion-title>Welcome to EduWorld</ion-title><br>
-        <ion-img id="welcome-image" src="../../assets/imgs/welcome.png"></ion-img>
-      </ion-col>
+        <ion-img id="welcome-image" src="../../assets/imgs/welcome.png" width="200" height="200" margin></ion-img><br>
 
-      <ion-col></ion-col>
-    </ion-row>
-    <ion-row align-items-end>
-      <ion-col>
-        <button ion-button (click)="this.navCtrl.setRoot('LoginPage')">Log In</button>
-        <button ion-button>Sign Up</button>
-      </ion-col>
+        <span><button ion-button (click)="this.navCtrl.push('LoginPage')">Log In</button>
+        <button ion-button>Sign Up</button></span>
+      </div>
     </ion-row>
   </ion-grid>
+
 </ion-content>
