@@ -2,16 +2,37 @@ page-home {
 
 }
 
-ion-avatar{
+ion-list-header {
+    font-size: 18px !important;
+}
+
+ion-avatar {
   margin: 4px;
+  width: 80px;
+  height: 80px;
+  img{
+    width: 80px;
+    height: 80px;
+  }
 }
 
 ion-card-header{
   padding-left: 2px !important;
   padding-top: 2px !important;
+  padding-bottom: 2px !important;
 }
 
 ion-card-content{
   padding-left: 2px !important;
   padding-top: 2px !important;
+  p {
+    color: lighten($text-color, 60) !important;
+    margin-bottom: 0px !important;
+    line-height: 1.1em !important;
+    font-size: 14px !important;
+  }
+}
+
+.booking_card_name {
+  font-weight: 400 !important;
 }
