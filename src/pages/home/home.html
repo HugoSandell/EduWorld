@@ -7,9 +7,10 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title text-center>Home</ion-title>
+      <ion-title text-center >
+        Home
+      </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -22,7 +23,7 @@
 
     <ion-card>
           <ion-avatar item-start float-left>
-            <ion-img src="../../assets/imgs/logo.png"></ion-img>
+            <img src="../../assets/imgs/logo.png">
           </ion-avatar>
 
           <ion-card-content float-left>
@@ -30,14 +31,16 @@
               Mathematics II
             </ion-card-header>
             <p class="booking_card_name">Yasser Hakim</p>
+
             <p class="booking_card_time">Nov 21, 19:00(+1 GMT)</p>
             <p class="booking_card_place">Androidstigen 21, Stockholm, Sweden</p>
           </ion-card-content>
+          <button ion-button float-right small clear>Edit</button>
     </ion-card>
 
     <ion-card>
           <ion-avatar item-start float-left>
-            <ion-img src="../../assets/imgs/logo.png"></ion-img>
+            <img src="../../assets/imgs/logo.png">
           </ion-avatar>
 
           <ion-card-content float-left>
@@ -48,6 +51,7 @@
             <p class="booking_card_time">Nov 25, 17:40(+1 GMT)</p>
             <p class="booking_card_place">Mobilgränd 6A, Stockholm, Sweden</p>
           </ion-card-content>
+          <button ion-button float-right small clear>Edit</button>
     </ion-card>
 
     <ion-list-header>
@@ -56,7 +60,7 @@
 
     <ion-card>
           <ion-avatar item-start float-left>
-            <ion-img src="../../assets/imgs/logo.png"></ion-img>
+            <img src="../../assets/imgs/logo.png">
           </ion-avatar>
 
           <ion-card-content float-left>
@@ -67,6 +71,30 @@
             <p class="booking_card_time">Nov 23, 16:00(+1 GMT)</p>
             <p class="booking_card_place">Appvägen 5, Stockholm, Sweden</p>
           </ion-card-content>
+          <div class="accept_reject" float-right>
+            <ion-icon class="icon_yes" name="checkmark"></ion-icon>
+            <ion-icon class="icon_no" name="close"></ion-icon>
+          </div>
+    </ion-card>
+
+    <ion-list-header>
+      Cancelled Bookings
+    </ion-list-header>
+
+    <ion-card>
+          <ion-avatar item-start float-left>
+            <img src="../../assets/imgs/logo.png">
+          </ion-avatar>
+
+          <ion-card-content float-left>
+            <ion-card-header>
+              Chemistry I
+            </ion-card-header>
+            <p class="booking_card_name">Gösta Ljungstrand</p>
+            <p class="booking_card_time">Nov 23, 14:00(+1 GMT)</p>
+            <p class="booking_card_place">Mobilgränd 6A, Stockholm, Sweden</p>
+          </ion-card-content>
+          <p class="cancelled_label" float-right>Cancelled</p>
     </ion-card>
   </ion-list>
 </ion-content>
